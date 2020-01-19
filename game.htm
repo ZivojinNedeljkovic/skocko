@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Skocko</title>
+    <link rel="icon" href="Content/Images/skockoIcon.jpg" type="image/x-icon">
+    <link href="CSS/mainCss.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="JAVASCRIPT/mainScript.js"></script>
+
+</head>
+
+<body>
+
+    <audio id="audio">
+        <source src="Content/Music/soundtrack.mp3" type="audio/mpeg">
+      </audio>
+
+    <div class="kontrolnaTabla">
+
+        <input type="image" id="back" title="back" src="Content/Images/back.png" alt="back">
+        <input type="image" id="refresh" title="refresh" src="Content/Images/refresh.png" alt="refresh">
+
+
+
+        <input type="image" id="karoDugme" class="inputImages" title="Karo" src="Content/Images/karo.png" alt="Karo">
+        <input type="image" id="hercDugme" class="inputImages" title="Herc" src="Content/Images/herc.png" alt="Herc">
+        <input type="image" id="zvezdaDugme" class="inputImages" title="Zvezda" src="Content/Images/zvezda.png"
+            alt="Zvezda">
+        <input type="image" id="trefDugme" class="inputImages" title="Tref" src="Content/Images/tref.png" alt="Tref">
+        <input type="image" id="pikDugme" class="inputImages" title="Pik" src="Content/Images/pik.png" alt="Pik">
+        <input type="image" id="skockoDugme" class="inputImages" title="Skocko" src="Content/Images/skocko.png"
+            alt="Skocko">
+
+
+        <input type="image" id="backspace" class="inputImages" title="Backspace" src="Content/Images/backspace.png"
+            alt="Backspace" value="Backspace">
+        <input type="image" id="enter" class="inputImages" title="Enter" src="Content/Images/enter.png" alt="Enter">
+
+
+    </div>
+
+    <div id="tabla">
+
+        <div id="kolona1" class="kolona">
+            <input type="image" id="polje11" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje12" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje13" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje14" class="polje" src="Content/Images/nista.png">
+
+            <div class="pogodci">
+                <div id="tacka11" class="tacka sivaTacka"></div>
+                <div id="tacka12" class="tacka sivaTacka"></div>
+                <div id="tacka13" class="tacka sivaTacka"></div>
+                <div id="tacka14" class="tacka sivaTacka"></div>
+            </div>
+        </div>
+        <div id="kolona2" class="kolona">
+            <input type="image" id="polje21" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje22" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje23" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje24" class="polje" src="Content/Images/nista.png">
+
+            <div class="pogodci">
+                <div id="tacka22" class="tacka sivaTacka"></div>
+                <div id="tacka21" class="tacka sivaTacka"></div>
+                <div id="tacka23" class="tacka sivaTacka"></div>
+                <div id="tacka24" class="tacka sivaTacka"></div>
+            </div>
+        </div>
+        <div id="kolona3" class="kolona">
+            <input type="image" id="polje31" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje32" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje33" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje34" class="polje" src="Content/Images/nista.png">
+            <div class="pogodci">
+                <div id="tacka31" class="tacka sivaTacka"></div>
+                <div id="tacka32" class="tacka sivaTacka"></div>
+                <div id="tacka33" class="tacka sivaTacka"></div>
+                <div id="tacka34" class="tacka sivaTacka"></div>
+            </div>
+        </div>
+        <div id="kolona4" class="kolona">
+            <input type="image" id="polje41" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje42" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje43" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje44" class="polje" src="Content/Images/nista.png">
+
+            <div class="pogodci">
+                <div id="tacka41" class="tacka sivaTacka"></div>
+                <div id="tacka42" class="tacka sivaTacka"></div>
+                <div id="tacka43" class="tacka sivaTacka"></div>
+                <div id="tacka44" class="tacka sivaTacka"></div>
+            </div>
+        </div>
+        <div id="kolona5" class="kolona">
+            <input type="image" id="polje51" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje52" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje53" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje54" class="polje" src="Content/Images/nista.png">
+
+            <div class="pogodci">
+                <div id="tacka51" class="tacka sivaTacka"></div>
+                <div id="tacka52" class="tacka sivaTacka"></div>
+                <div id="tacka53" class="tacka sivaTacka"></div>
+                <div id="tacka54" class="tacka sivaTacka"></div>
+            </div>
+        </div>
+        <div id="kolona6" class="kolona">
+            <input type="image" id="polje61" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje62" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje63" class="polje" src="Content/Images/nista.png">
+            <input type="image" id="polje64" class="polje" src="Content/Images/nista.png">
+
+            <div class="pogodci">
+                <div id="tacka61" class="tacka sivaTacka"></div>
+                <div id="tacka62" class="tacka sivaTacka"></div>
+                <div id="tacka63" class="tacka sivaTacka"></div>
+                <div id="tacka64" class="tacka sivaTacka"></div>
+            </div>
+        </div>
+
+        <div id="prikaziResenje" class="kolona">
+
+            <input id="konacnoPolje1" class="polje" type="image" class="unosImages" src="Content/Images/nista.png">
+            <input id="konacnoPolje2" class="polje" type="image" class="unosImages" src="Content/Images/nista.png">
+            <input id="konacnoPolje3" class="polje" type="image" class="unosImages" src="Content/Images/nista.png">
+            <input id="konacnoPolje4" class="polje" type="image" class="unosImages" src="Content/Images/nista.png">
+
+            <input type="image" id="pomoc" title="Prikaži tačan rezultat" src="Content/Images/help.png" alt="Help"
+                value="Help">
+
+
+        </div>
+        <div id="podesavanjaZvuka">
+            <input type="image" id="gameSounds" class="sound" data-toggle="tooltip" title="Zvuk"
+                src="Content/Images/Sound.png" onclick="SoundSwitsh()">
+            <input type="image" id="gameMusic" class="sound" data-toggle="tooltip" title="Muzika"
+                src="Content/Images/music.png" onclick="MusicSwitsh()">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

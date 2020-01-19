@@ -1,0 +1,199 @@
+body {
+    margin: 0%;
+    animation-name: pozadina;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+   
+}
+#back:focus{
+    outline: none;
+}
+@keyframes pozadina{
+    from {background-color: #b3b3ff;}
+    to {background-color: #8080ff;}
+}
+
+#back{
+    /*height: 50px;
+    width: 50px;*/
+    margin-top: 12px;
+}
+
+#refresh:hover {
+    animation-direction: alternate;
+    animation-name: spin2;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+#refresh:focus{
+    outline: none;
+}
+ @keyframes spin2 { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(500deg); 
+    }
+}
+
+.kontrolnaTabla{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.inputImages{
+   /* margin-left: 7px;*/
+    box-shadow: 0px 5px 5px black;
+   /* border: 1px solid black;*/
+    /*border-radius: 10px;*/
+}
+.inputImages:active{
+    box-shadow: 1px 2px 0px black;
+}
+.inputImages:focus {
+    outline: none;
+}
+/*#karoDugme{
+    margin-left: 100px;
+}*/
+#pomoc{
+    box-shadow: 0px 5px 5px black;
+    border: 1px solid black;
+   /* border-radius: 10px;*/
+    /*margin-left: 15px;
+    height: 50px;
+    width: 50px;*/
+}
+/*#backspace{
+    margin-left: 35px;
+    margin-right: 5px;
+}*/
+#tabla{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 7px;
+}
+.kolona{
+    display: flex;
+}
+.polje{
+    box-shadow: 1px 2px 0px black;
+   /* margin: 5px;*/
+    padding: 1px;
+	/*width:58px;
+    height:58px;*/
+    /*border: 2px solid black;
+    border-radius: 10px;*/
+}
+.pogodci{
+    display: flex;
+}
+.tacka{
+    justify-self: center;
+    align-self: center;
+    border: 1px solid black;
+    /*margin: 5px;*/
+    border-radius: 50px;
+}
+.sivaTacka{
+   
+    /*width: 55px;
+    height: 55px;*/
+   /* background-color: gray;*/
+    animation-name: Gray;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    /*animation-timing-function: linear;*/
+      animation-direction: alternate-reverse;
+}
+@keyframes Gray {
+    from {
+         background-color: #a6a6a6;
+     }
+ 
+     to {
+         background-color: #737373;
+         transform: rotateY(-1080deg);
+     }
+ }
+.zutaTacka {
+  /* background-color: yellow;*/
+   animation-name: Yellow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+      animation-direction: alternate-reverse;
+}
+@keyframes Yellow {
+    from {
+        background-color: #ffff00;
+    }
+
+    to {
+        background-color: #ffff1a;
+        transform: rotateY(180deg);
+    }
+}
+.crvenaTacka{
+   /* background-color: red;*/
+    animation-name: Red;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    /*animation-timing-function: linear;*/
+    /*animation-direction: alternate-reverse;*/
+}
+@keyframes Red {
+    0% {
+        background-color: #ff0000;
+         transform: rotateY(0deg);
+    }
+    25% {
+        background-color: #e60000;
+         transform: rotateY(0deg);
+    }
+
+    50% {
+        background-color: #ff0000;
+         transform: rotateY(0deg);
+    }
+    75% {
+        background-color: #ff1a1a;
+         transform: rotateY(0deg);
+    }
+    100% {
+        background-color: #ff0000;
+         transform: rotateY(180deg);
+    }
+}
+
+/*#prikaziResenje{
+    margin-top: 20px;
+}*/
+#podesavanjaZvuka{
+    display: flex;
+    align-self: flex-end;
+}
+.sound {
+    /*width: 20px;
+    height: 20px;*/
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    
+}
+.sound:active{
+    box-shadow: 0px 0px 0px black;
+}
+.sound:focus {
+    outline: none;
+}
+#gameMusic{
+    margin-right:10px;
+}
+
